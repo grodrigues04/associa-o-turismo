@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}aaa{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'base/css/style.css' %}">
+    {% block extra_css %}{% endblock %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="{% static 'base/images/logo.png' %}" alt="Logo" width="50" height="50"><!--ChatGpt me corrigindo-->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Sobre Nós</h5>
+                <p>Somos uma empresa dedicada a fornecer serviços de alta qualidade.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Links Úteis</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Quem Somos</a></li>
+                    <li><a href="#" class="text-white">Contato</a></li>
+                    <li><a href="#" class="text-white">Serviços</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contato</h5>
+                <p>Email: contato@empresa.com</p>
+                <p>Telefone: (11) 99999-9999</p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 Empresa. Todos os direitos reservados.</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>

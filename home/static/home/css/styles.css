@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    /* background: url('https://images.unsplash.com/photo-1689301109191-ff1f55d2e243?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; */
+    
+    /*--  */
+    
+    background-image: url('https://images.unsplash.com/photo-1689301109191-ff1f55d2e243?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+
+    /*--  */
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+.content p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    max-width: 600px;
+}
+.content a {
+    display: inline-block;
+    padding: 12px 35px;
+    margin-top: 30px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.content a:hover {
+    background-color: #ff3e30;
+    transform: scale(1.05);
+}
+
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    border-color: #f5f0f05d;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px;
+}
+
+.title_article{
+    margin-top: 2.7rem;
+    text-align: center;
+}
+
+
+.article_main_content{
+    width: 75%;  /* Defina a largura desejada */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.service_cards_section{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    gap: 3.5rem; 
+}
+
+article{
+    background-color: #2e2d2d;
+    color: aliceblue;
+}
