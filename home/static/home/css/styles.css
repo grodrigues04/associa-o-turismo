@@ -110,3 +110,10 @@ article{
     background-color: #2e2d2d;
     color: aliceblue;
 }
+
+.beach_description{
+    display: flex; 
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
