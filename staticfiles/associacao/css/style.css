@@ -1,0 +1,20 @@
+.main_title{
+    text-align: center;
+    padding-top: 1%;
+}
+
+.associados_container{
+    width: 80%; /* Define uma largura */
+    height: auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:center ;
+    align-items: center;
+    gap: 30px;
+    margin-top: 3%;
+}
+
+.space_footer{
+    padding-top: 7%;
+}
