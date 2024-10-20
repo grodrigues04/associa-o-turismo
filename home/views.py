@@ -7,3 +7,15 @@ def home_view(request):
         request,
         "home/index.html"
     )
+
+def associacao_view(request):
+    return render(
+        request,
+        "associados/index.html"
+    )
+
+def contato_view(request):
+    return render(
+        request,
+        "contato/index.html"
+)
