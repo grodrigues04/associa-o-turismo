@@ -10,7 +10,7 @@
         <div class="content">
             <h1>Associação de turismo de Florianópolis</h1>
             <p>Oferecemos serviços de turismos para todas as pessoas! Venha nos conhecer! </p>
-            <a href="#servicos">Nossos Serviços</a>
+            <a href="#article_main_content" class="main_button_services">Nossos Serviços</a>
         </div>
     </section>
     <article>
@@ -131,11 +131,21 @@
                 </button>
               </div>
 
+              <h2>Faça um orçamento agora!</h2>
               <a href="#" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Entre em contato!</a>
 
 
 
 
         </div>
+        
     </article>
+    <script>
+        // JavaScript para rolagem suave
+        document.querySelector('.main_button_services').addEventListener('click', function() {
+            document.querySelector('.title_article').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+        </script>
 {% endblock %}
